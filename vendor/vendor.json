@@ -9,6 +9,12 @@
 			"revisionTime": "2017-10-21T04:39:52Z"
 		},
 		{
+			"checksumSHA1": "XNHQiRltA7NQJV0RvUroY+cf+zg=",
+			"path": "github.com/golang/protobuf/protoc-gen-go/descriptor",
+			"revision": "1643683e1b54a9e88ad26d98f81400c8c9d9f4f9",
+			"revisionTime": "2017-10-21T04:39:52Z"
+		},
+		{
 			"checksumSHA1": "VfkiItDBFFkZluaAMAzJipDXNBY=",
 			"path": "github.com/golang/protobuf/ptypes",
 			"revision": "1643683e1b54a9e88ad26d98f81400c8c9d9f4f9",
@@ -31,6 +37,24 @@
 			"path": "github.com/golang/protobuf/ptypes/timestamp",
 			"revision": "1643683e1b54a9e88ad26d98f81400c8c9d9f4f9",
 			"revisionTime": "2017-10-21T04:39:52Z"
+		},
+		{
+			"checksumSHA1": "3HVfwgLpCDH8JX211UWdrSi/GU4=",
+			"path": "github.com/lib/pq",
+			"revision": "b609790bd85edf8e9ab7e0f8912750a786177bcf",
+			"revisionTime": "2017-10-22T19:20:43Z"
+		},
+		{
+			"checksumSHA1": "ATnwV0POluBNQEMjPdylodz0oK0=",
+			"path": "github.com/lib/pq/oid",
+			"revision": "b609790bd85edf8e9ab7e0f8912750a786177bcf",
+			"revisionTime": "2017-10-22T19:20:43Z"
+		},
+		{
+			"checksumSHA1": "rJab1YdNhQooDiBWNnt7TLWPyBU=",
+			"path": "github.com/pkg/errors",
+			"revision": "f15c970de5b76fac0b59abb32d62c17cc7bed265",
+			"revisionTime": "2017-10-18T19:55:50Z"
 		},
 		{
 			"checksumSHA1": "GtamqiJoL7PGHsN454AoffBFMa8=",
@@ -179,6 +203,18 @@
 		{
 			"checksumSHA1": "n5EgDdBqFMa2KQFhtl+FF/4gIFo=",
 			"path": "google.golang.org/grpc/peer",
+			"revision": "a4ff4e29c4bb071c28d9a81571c0d8bbdc644f9f",
+			"revisionTime": "2017-10-26T23:03:44Z"
+		},
+		{
+			"checksumSHA1": "Ee74MTO9rEUoRgLFEWW4uvGKRTM=",
+			"path": "google.golang.org/grpc/reflection",
+			"revision": "a4ff4e29c4bb071c28d9a81571c0d8bbdc644f9f",
+			"revisionTime": "2017-10-26T23:03:44Z"
+		},
+		{
+			"checksumSHA1": "7Ax2K0St9CIi1rkA9Ju+2ERfe9E=",
+			"path": "google.golang.org/grpc/reflection/grpc_reflection_v1alpha",
 			"revision": "a4ff4e29c4bb071c28d9a81571c0d8bbdc644f9f",
 			"revisionTime": "2017-10-26T23:03:44Z"
 		},

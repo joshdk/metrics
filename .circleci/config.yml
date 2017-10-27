@@ -6,10 +6,14 @@ jobs:
 
     working_directory: /go/src/github.com/joshdk/metrics
     steps:
+      - setup_remote_docker
       - checkout
+      - run: sudo env GOOS=darwin GOARCH=amd64 $(which go) install std
       - run: wget https://github.com/google/protobuf/releases/download/v3.4.0/protoc-3.4.0-linux-x86_64.zip
       - run: unzip -p protoc-3.4.0-linux-x86_64.zip bin/protoc | dd of=/tmp/protoc
       - run: sudo install -m 755 /tmp/protoc /usr/bin/protoc
       - run: go get -u github.com/golang/protobuf/protoc-gen-go
       - run: ./godelw version
       - run: ./godelw verify --apply=false
+      - run: ./godelw dist
+      - run: ./godelw docker build

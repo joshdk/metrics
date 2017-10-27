@@ -1,0 +1,8 @@
+address: 0.0.0.0:9001
+
+postgres:
+  hostname: db
+  port: 5432
+  dbname: metrics
+  username: postgres
+  password: 12345

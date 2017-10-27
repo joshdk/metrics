@@ -1,0 +1,32 @@
+version: "3.1"
+ 
+services:
+ 
+  db:
+    image: postgres:9.6
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - metrics
+    ports:
+     - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: metrics
+
+  metrics-server:
+    image: metrics-server:latest
+    networks:
+      - metrics
+    ports:
+     - "9001:9001"
+    volumes:
+     - ${PWD}/server.yml:/server.yml
+    depends_on:
+     - db
+
+networks:
+    metrics:
+ 
+volumes:
+  db-data:

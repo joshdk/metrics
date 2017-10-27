@@ -1,0 +1,41 @@
+group-id: com.joshdk.metrics
+
+products:
+
+  metrics-server:
+    build:
+      output-dir: ./build/bin
+      main-pkg: ./cmd/server
+      version-var: github.com/joshdk/metrics/cmd/version.version
+      os-archs:
+        - os: darwin
+          arch: amd64
+        - os: linux
+          arch: amd64
+    dist:
+      output-dir: ./build/dist
+      dist-type:
+        type: sls
+    docker:
+      - repository: metrics-server
+        tag: latest
+        context-dir: .
+        dependencies:
+          - product: metrics-server
+            type: sls
+            target-file: metrics-server.sls.tgz
+
+  metrics-client:
+    build:
+      output-dir: ./build/bin
+      main-pkg: ./cmd/client
+      version-var: github.com/joshdk/metrics/cmd/version.version
+      os-archs:
+        - os: darwin
+          arch: amd64
+        - os: linux
+          arch: amd64
+    dist:
+      output-dir: ./build/dist
+      dist-type:
+        type: os-arch-bin

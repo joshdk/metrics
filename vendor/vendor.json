@@ -3,6 +3,12 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "sMNGYak6MM8KcTSbVRS4ADbuauM=",
+			"path": "github.com/araddon/dateparse",
+			"revision": "ca7e753bd149dae747d76fa7d52b20b920f3a814",
+			"revisionTime": "2017-10-07T16:34:59Z"
+		},
+		{
 			"checksumSHA1": "yqF125xVSkmfLpIVGrLlfE05IUk=",
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "1643683e1b54a9e88ad26d98f81400c8c9d9f4f9",
@@ -51,10 +57,42 @@
 			"revisionTime": "2017-10-22T19:20:43Z"
 		},
 		{
+			"checksumSHA1": "L3leymg2RT8hFl5uL+5KP/LpBkg=",
+			"origin": "github.com/palantir/pkg/vendor/github.com/mitchellh/go-wordwrap",
+			"path": "github.com/mitchellh/go-wordwrap",
+			"revision": "91dcfbfa2f9ec3e7278e1ad55c91fec64b3c6651",
+			"revisionTime": "2017-09-07T20:42:57Z"
+		},
+		{
+			"checksumSHA1": "ljBDT76JXjWx77qKq24Ck2N+nfU=",
+			"path": "github.com/palantir/pkg/cli",
+			"revision": "91dcfbfa2f9ec3e7278e1ad55c91fec64b3c6651",
+			"revisionTime": "2017-09-07T20:42:57Z"
+		},
+		{
+			"checksumSHA1": "FXX9tuBZLSGdfkppgIZn/LZsnmQ=",
+			"path": "github.com/palantir/pkg/cli/completion",
+			"revision": "91dcfbfa2f9ec3e7278e1ad55c91fec64b3c6651",
+			"revisionTime": "2017-09-07T20:42:57Z"
+		},
+		{
+			"checksumSHA1": "Ztrd2ZLqj5WeBlGBE5BrOJ+h8Ro=",
+			"path": "github.com/palantir/pkg/cli/flag",
+			"revision": "91dcfbfa2f9ec3e7278e1ad55c91fec64b3c6651",
+			"revisionTime": "2017-09-07T20:42:57Z"
+		},
+		{
 			"checksumSHA1": "rJab1YdNhQooDiBWNnt7TLWPyBU=",
 			"path": "github.com/pkg/errors",
 			"revision": "f15c970de5b76fac0b59abb32d62c17cc7bed265",
 			"revisionTime": "2017-10-18T19:55:50Z"
+		},
+		{
+			"checksumSHA1": "ZaU56svwLgiJD0y8JOB3+/mpYBA=",
+			"origin": "github.com/palantir/pkg/vendor/golang.org/x/crypto/ssh/terminal",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "91dcfbfa2f9ec3e7278e1ad55c91fec64b3c6651",
+			"revisionTime": "2017-09-07T20:42:57Z"
 		},
 		{
 			"checksumSHA1": "GtamqiJoL7PGHsN454AoffBFMa8=",
@@ -97,6 +135,13 @@
 			"path": "golang.org/x/net/trace",
 			"revision": "4b14673ba32bee7f5ac0f990a48f033919fd418b",
 			"revisionTime": "2017-09-15T10:16:46Z"
+		},
+		{
+			"checksumSHA1": "tS9B7JRfbkBNQHl0i0AGj+r1ruk=",
+			"origin": "github.com/palantir/pkg/vendor/golang.org/x/sys/unix",
+			"path": "golang.org/x/sys/unix",
+			"revision": "91dcfbfa2f9ec3e7278e1ad55c91fec64b3c6651",
+			"revisionTime": "2017-09-07T20:42:57Z"
 		},
 		{
 			"checksumSHA1": "tltivJ/uj/lqLk05IqGfCv2F/E8=",
@@ -259,6 +304,12 @@
 			"path": "google.golang.org/grpc/transport",
 			"revision": "a4ff4e29c4bb071c28d9a81571c0d8bbdc644f9f",
 			"revisionTime": "2017-10-26T23:03:44Z"
+		},
+		{
+			"checksumSHA1": "RDJpJQwkF012L6m/2BJizyOksNw=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "eb3733d160e74a9c7e442f435eb3bea458e1d19f",
+			"revisionTime": "2017-08-12T16:00:11Z"
 		}
 	],
 	"rootPath": "github.com/joshdk/metrics"

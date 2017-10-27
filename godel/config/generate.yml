@@ -1,0 +1,6 @@
+generators:
+  shim:
+    go-generate-dir: protocol
+    gen-paths:
+      paths:
+        - "protocol/generate.go"

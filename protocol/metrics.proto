@@ -1,0 +1,47 @@
+// Copyright 2017 Josh Komoroske. All rights reserved.
+// Use of this source code is governed by an MIT-style
+// license that can be found in the LICENSE.txt file.
+
+syntax = "proto3";
+
+package protocol;
+
+// The greeting service definition.
+service Metrics {
+    rpc WriteMetric  (MetricWriteRequest)  returns (MetricWriteReply)  {}
+    rpc QueryMetrics (QueryMetricsRequest) returns (QueryMetricsReply) {}
+}
+
+// The request message containing the user's name.
+ message MetricWriteRequest {
+   string id = 1;
+   uint32 count = 2;
+ }
+
+// The request message containing the user's name.
+message QueryMetricsRequest {
+    uint32 start = 1;
+    uint32 end = 2;
+    uint32 count = 3;
+}
+
+// The response message containing the greetings
+message MetricWriteReply {
+  ErrorStatus error = 1;
+}
+
+// The response message containing the greetings
+message QueryMetricsReply {
+  message Result {
+    uint32 time = 1;
+    uint32 count = 2;
+  }
+
+  ErrorStatus error = 1;
+    repeated Result results = 2;
+}
+
+// The response message containing the greetings
+message ErrorStatus {
+  string message = 1;
+}
